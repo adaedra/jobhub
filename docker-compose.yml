@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: postgres:12-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - database:/mnt/database
+    environment:
+      PGDATA: /mnt/database/postgres
+      POSTGRES_USER: jobhub
+      POSTGRES_PASSWORD: jobhub
+volumes:
+  database:
