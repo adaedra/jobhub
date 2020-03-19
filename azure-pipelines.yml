@@ -49,5 +49,7 @@ jobs:
       displayName: 'Lint: rubocop'
     - script: npx eslint .
       displayName: 'Lint: eslint'
-    - script: bin/rspec
+    - script: |
+        bin/rails db:test:prepare
+        bin/rspec
       displayName: 'Tests'
