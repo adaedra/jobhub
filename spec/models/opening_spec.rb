@@ -30,12 +30,21 @@ RSpec.describe Opening, type: :model do
     expect(record.errors.details[:description]).to include(error: :blank)
   end
 
-  describe '#archived_at' do
-    it %(can't be set if published_at is unset) do
+  describe '#published_at' do
+    it %(can't be unset if archived_at is set) do
       record = Fabricate.build(:opening, published_at: nil, archived_at: 1.week.from_now)
 
       expect(record.save).to be(false)
       expect(record.errors[:published_at]).to include(%(can't be unset if the archival date is set))
+    end
+  end
+
+  describe '#archived_at' do
+    it 'must be set after published_at' do
+      record = Fabricate.build(:opening, published_at: 1.month.from_now, archived_at: 1.week.from_now)
+
+      expect(record.save).to be(false)
+      expect(record.errors[:archived_at]).to include('must be set after publication date')
     end
   end
 end
