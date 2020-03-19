@@ -8,7 +8,6 @@ jobs:
     variables:
       BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
       YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
-      RAILS_MASTER_KEY: $(RAILS_MASTER_KEY)
     steps:
     - task: UseRubyVersion@0
       inputs:
@@ -53,4 +52,6 @@ jobs:
     - script: |
         bin/rails db:test:prepare
         bin/rspec
+      env:
+        RAILS_MASTER_KEY: $(RAILS_MASTER_KEY)
       displayName: 'Tests'
