@@ -9,6 +9,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - '.git/**/*'
+    - 'db/schema.rb'
 
 Layout/LineLength:
   Max: 120
