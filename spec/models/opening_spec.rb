@@ -47,4 +47,13 @@ RSpec.describe Opening, type: :model do
       expect(record.errors[:archived_at]).to include('must be set after publication date')
     end
   end
+
+  describe '#upstream_url' do
+    it 'is required on API create' do
+      record = Fabricate.build(:opening, upstream_url: nil)
+
+      expect(record.save(context: :api_create)).to be(false)
+      expect(record.errors.details[:upstream_url]).to include(error: :blank)
+    end
+  end
 end
