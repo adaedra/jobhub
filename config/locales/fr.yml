@@ -1,0 +1,10 @@
+fr:
+  activerecord:
+    errors:
+      models:
+        opening:
+          attributes:
+            published_at:
+              archived_before_publication: ne peut être vide si la date d'archivage est définie
+            archived_at:
+              before_publication: doit être postérieure à la date de publication

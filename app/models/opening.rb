@@ -4,7 +4,7 @@ class Opening < ApplicationRecord
   validates :title, presence: true
   validates :company, presence: true
   validates :description, presence: true
-  validates :published_at, presence: { message: %(can't be unset if the archival date is set) }, if: :archived_at?
+  validates :published_at, presence: { message: :archived_before_publication }, if: :archived_at?
   validates :upstream_url, url: { allow_nil: true, schemes: %i[https] }
   validates_with PublicationValidator
 
