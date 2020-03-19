@@ -99,6 +99,7 @@ GEM
     parser (2.7.0.4)
       ast (~> 2.4.0)
     pg (1.2.3)
+    public_suffix (4.0.3)
     puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.2.2)
@@ -193,6 +194,9 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.1)
+    validate_url (1.0.8)
+      activemodel (>= 3.0.0)
+      public_suffix
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -225,6 +229,7 @@ DEPENDENCIES
   rubocop-rspec (~> 1.38)
   sass-rails (>= 6)
   tzinfo-data
+  validate_url (~> 1.0)
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 
