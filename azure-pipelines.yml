@@ -8,6 +8,7 @@ jobs:
     variables:
       BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
       YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+      RAILS_MASTER_KEY: $(RAILS_MASTER_KEY)
     steps:
     - task: UseRubyVersion@0
       inputs:
