@@ -1,0 +1,17 @@
+require:
+  - rubocop/rspec
+  - rubocop/rails
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+
+Layout/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
