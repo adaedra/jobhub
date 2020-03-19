@@ -1,0 +1,53 @@
+# Reference: https://aka.ms/yaml
+
+pool:
+  vmImage: 'ubuntu-18.04'
+
+jobs:
+  - job: 'Build'
+    variables:
+      BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
+      YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+    steps:
+    - task: UseRubyVersion@0
+      inputs:
+        versionSpec: '2.6.5'
+      displayName: 'System: ruby'
+    - script: gem install bundler
+      displayName: 'System: bundler'
+    - task: UseNode@1
+      inputs:
+        version: '12.x'
+      displayName: 'System: node'
+    - task: YarnInstaller@3
+      inputs:
+        versionSpec: '1.x'
+      displayName: 'System: yarn'
+    - task: CacheBeta@1
+      inputs:
+        key: 'gems | "$(Agent.OS)" | Gemfile.lock'
+        path: '$(BUNDLE_PATH)'
+        restoreKeys: 'gems | "$(Agent.OS)"'
+      displayName: 'Cache: Ruby'
+    - script: bundle install --frozen --jobs 2
+      displayName: 'Dependencies: Ruby'
+    - task: CacheBeta@1
+      inputs:
+        key: 'yarn | "$(Agent.OS)" | yarn.lock'
+        path: '$(YARN_CACHE_FOLDER)'
+        restoreKeys: |
+          yarn | "$(Agent.OS)"
+          yarn
+      displayName: 'Cache: Node'
+    - task: Yarn@3
+      inputs:
+        arguments: '--frozen-lockfile'
+      displayName: 'Dependencies: Node'
+    - script: docker-compose up -d
+      displayName: 'Dependencies: Docker'
+    - script: bin/rubocop
+      displayName: 'Lint: rubocop'
+    - script: npx eslint .
+      displayName: 'Lint: eslint'
+    - script: bin/rspec
+      displayName: 'Tests'
