@@ -1,4 +1,7 @@
 {
     "extends": ["standard", "standard-jsx"],
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    }
 }
