@@ -47,7 +47,7 @@ jobs:
       displayName: 'Dependencies: Docker'
     - script: bin/rubocop
       displayName: 'Lint: rubocop'
-    - script: npx eslint .
+    - script: yarn lint
       displayName: 'Lint: eslint'
     - script: |
         bin/rails db:test:prepare
