@@ -13,7 +13,7 @@ RSpec.describe 'Api::Openings', type: :request do
           params: { opening: Fabricate.attributes_for(:opening) }.to_json,
           headers: headers.tap { |headers| headers.delete('Authorization') }
       end
-        .not_to change(:Opening, :count)
+        .not_to change(Opening, :count)
 
       expect(response).to have_http_status(:unauthorized)
     end
