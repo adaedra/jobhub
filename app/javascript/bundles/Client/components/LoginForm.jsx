@@ -38,7 +38,7 @@ const LoginForm = () => {
       })
 
       if (response.status === 200) {
-        // TODO: Send to the right page
+        window.location = (await response.json()).redirect_to
       } else {
         setError('Could not log in')
       }

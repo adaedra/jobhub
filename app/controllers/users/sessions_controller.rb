@@ -7,7 +7,7 @@ class Users::SessionsController < Devise::SessionsController
     resource = User.find_for_database_authentication(user_params.slice(:email))
     if resource&.valid_password?(user_params[:password])
       sign_in :user, resource
-      return render json: { success: true }
+      return render json: { success: true, redirect_to: admin_openings_path }
     end
 
     render json: { success: false }, status: :unauthorized

@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   namespace :api do
     resources :openings, only: %i[create], defaults: { format: :jsonapi }
   end
+
+  namespace :admin do
+    resources :openings
+  end
 end

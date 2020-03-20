@@ -12,4 +12,24 @@ class Opening < ApplicationRecord
   scope :published, -> { where.not(published_at: nil).where('published_at <= current_timestamp') }
   scope :not_archived, -> { where(archived_at: nil).or(where('archived_at > current_timestamp')) }
   scope :active, -> { published.not_archived }
+
+  def published?
+    published_at? && published_at.past?
+  end
+
+  def archived?
+    archived_at? && archived_at.past?
+  end
+
+  def active?
+    published? && !archived?
+  end
+
+  def status
+    if published?
+      archived? ? 'Archived' : 'Active'
+    else
+      'Pending'
+    end
+  end
 end
