@@ -7,6 +7,6 @@ RSpec.describe User, type: :model do
     user = Fabricate.build(:user)
 
     expect(user.save).to be(true)
-    expect(user.encrypted_password).to_not be(nil)
+    expect(user.encrypted_password).not_to be(nil)
   end
 end

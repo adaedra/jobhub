@@ -1,6 +1,6 @@
 require:
-  - rubocop/rspec
-  - rubocop/rails
+  - rubocop-rspec
+  - rubocop-rails
 
 AllCops:
   Exclude:
@@ -21,6 +21,16 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Exclude:
     - 'db/migrate/*'
+
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/tasks/**/*'
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
 
 Style/ClassAndModuleChildren:
   Enabled: false

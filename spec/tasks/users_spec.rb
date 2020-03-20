@@ -8,7 +8,7 @@ RSpec.describe 'users' do
       expect do
         Rake::Task['users:create'].invoke(Faker::Internet.email)
       end
-        .to change { User.count }.by(1).and output(/User \S+ created./).to_stdout
+        .to change(User, :count).by(1).and output(/User \S+ created./).to_stdout
     end
   end
 end

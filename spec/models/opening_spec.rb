@@ -12,7 +12,7 @@ RSpec.describe Opening, type: :model do
     let!(:active) { Fabricate(:opening) }
 
     it 'selects only the active offers' do
-      expect(Opening.active).to eq([active])
+      expect(described_class.active).to eq([active])
     end
   end
 

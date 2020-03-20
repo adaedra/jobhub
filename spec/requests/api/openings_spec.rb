@@ -13,7 +13,7 @@ RSpec.describe 'Api::Openings', type: :request do
           params: { opening: Fabricate.attributes_for(:opening) }.to_json,
           headers: headers.tap { |headers| headers.delete('Authorization') }
       end
-        .to_not(change { Opening.count })
+        .not_to change(:Opening, :count)
 
       expect(response).to have_http_status(:unauthorized)
     end
@@ -24,7 +24,7 @@ RSpec.describe 'Api::Openings', type: :request do
           opening: Fabricate.attributes_for(:opening, upstream_url: 'https://example.org/dummy')
         }.to_json, headers: headers
       end
-        .to change { Opening.count }.by(1)
+        .to change(Opening, :count).by(1)
 
       expect(response).to have_http_status(:created)
     end
@@ -35,7 +35,7 @@ RSpec.describe 'Api::Openings', type: :request do
           opening: Fabricate.attributes_for(:opening, upstream_url: nil)
         }.to_json, headers: headers
       end
-        .to_not(change { Opening.count })
+        .not_to change(Opening, :count)
 
       expect(response).to have_http_status(:unprocessable_entity)
     end
