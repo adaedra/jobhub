@@ -46,8 +46,8 @@ const LoginForm = () => {
   })
 
   return (
-    <div className='h-100 row align-items-center justify-content-center'>
-      <div className='col col-md-4'>
+    <div className='h-100 d-flex align-items-center justify-content-center'>
+      <div className='col-md-6 col-lg-4'>
         <h1>Login to JobHub</h1>
         <div className='card border-secondary'>
           <div className='card-body'>
