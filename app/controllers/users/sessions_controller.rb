@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
+  before_action :set_bundle
+
   def create
     user_params = params.require(:user).permit(:email, :password)
 
@@ -11,5 +13,11 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     render json: { success: false }, status: :unauthorized
+  end
+
+  private
+
+  def set_bundle
+    @layout_bundle = :login
   end
 end
