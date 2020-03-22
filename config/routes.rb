@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :openings
   end
+
+  root to: redirect('/openings')
 end
