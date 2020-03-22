@@ -2,7 +2,7 @@
 
 class OpeningsController < ApplicationController
   def index
-    @openings = Opening.published
+    @openings = Opening.published.order(published_at: :desc)
 
     respond_to do |format|
       format.html { render :spa, locals: { context: { openings: render_json } } }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BrowserRouter, StaticRouter, Switch, Route } from 'react-router-dom'
 import DataLoader from 'bundles/Public/components/DataLoader'
 import OpeningList from 'bundles/Public/components/OpeningList'
@@ -6,7 +6,6 @@ import Opening from 'bundles/Public/components/Opening'
 import { isPrerender } from 'bundles/Public/prerender'
 
 const fetchOpenings = (_, openings) => {
-  console.log('fetchOpenings', openings)
   if (openings) { return false }
 
   return fetch('/openings.json')
@@ -23,17 +22,17 @@ const fetchOpening = ({ id }, opening) => {
     .then(response => response.json())
 }
 
+// Use a different component depending on the presence of prerender, so prerender works out of browser (with the
+// provided location) and in-browser uses standard router.
 const Router = isPrerender
   ? (props) => <StaticRouter {...props} />
   : ({ location, ...props }) => <BrowserRouter {...props} />
 
-const App = ({ context: initialContext, railsContext: { location } }) => {
-  const [context, setContext] = useState(initialContext)
-
+const App = ({ context, railsContext: { location } }) => {
   const ConnectedOpening =
-    () => <DataLoader data={context} setData={setContext} dataKey='opening' onFetch={fetchOpening} component={data => <Opening {...data} />} />
+    () => <DataLoader initialData={context.opening} onFetch={fetchOpening} component={data => <Opening {...data} />} />
   const ConnectedOpeningList =
-    () => <DataLoader data={context} setData={setContext} dataKey='openings' onFetch={fetchOpenings} component={data => <OpeningList openings={data} />} />
+    () => <DataLoader initialData={context.openings} onFetch={fetchOpenings} component={data => <OpeningList openings={data} />} />
 
   return (
     <Router location={location}>

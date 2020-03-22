@@ -9,8 +9,7 @@ const Loader = () => (
 )
 
 // Convoluted element to fetch data on demand.
-// data (object): The current data store
-// dataKey (string): The element of data to pass to the child element
+// data (object): The data as passed by the page.
 // onFetch (function):
 //   The function to call to refresh data. It is called when the element is showing data and not already fetching new
 //   data.
@@ -19,25 +18,25 @@ const Loader = () => (
 //   the key.
 // component (function): A function that takes the data and returns a component with the data injected.
 // setData (function): The parent function to update the data.
-const DataLoader = ({ data, dataKey, onFetch, component, setData }) => {
+const DataLoader = ({ initialData, onFetch, component }) => {
   const params = useParams()
+  const [data, setData] = useState(initialData)
   const [promise, setPromise] = useState(null)
 
   useEffect(() => {
     if (!isPrerender && onFetch && !promise) {
-      const promise = onFetch(params, data[dataKey])
+      const promise = onFetch(params, data)
       if (!promise) { return }
       setPromise(promise)
 
       promise.then(newData => {
-        setData(Object.assign(data, { [dataKey]: newData }))
+        setData(newData)
         setPromise(null)
       })
     }
   }, [])
 
-  console.log('data', data, promise)
-  return data[dataKey] && !promise ? component(data[dataKey]) : <Loader />
+  return data && !promise ? component(data) : <Loader />
 }
 
 export default DataLoader
