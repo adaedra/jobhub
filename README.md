@@ -40,6 +40,8 @@ I added `rubocop` and `eslint` as linters, and did a very basic setup of them. L
 
 I used RSpec as test framework as it seemed to be the one used for the challenge. I tend to prefer RSpec though because of a more complete interface and strong guidelines.
 
+To this, I added Capybara and Selenium to system tests, to perform tests in a real environment with JavaScript enabled to test the public site, using a simple scenario. For tests, I tend to reserve high-level tests to complete scenarios representing most common cases, and complete for corner-cases with low-level tests.
+
 During the development, the project was saved on the Azure DevOps platform, and I used the provided CI to have automated tests. No strong reason other than preference.
 
 I added a Docker Compose file to have an easier setup of a development environment.
