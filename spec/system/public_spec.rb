@@ -10,7 +10,7 @@ RSpec.describe 'Public Website', type: :system do
   let!(:opening) { Fabricate(:opening) }
 
   it 'displays offers' do
-    visit '/'
+    visit root_path
     expect(page).to have_content('Active openings')
     expect(page).to have_content(opening.title)
 

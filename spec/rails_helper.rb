@@ -73,6 +73,8 @@ RSpec.configure do |config|
   config.before(:suite) do
     Rails.application.load_tasks
   end
+
+  config.include Warden::Test::Helpers
 end
 
 Capybara.default_driver = :selenium_headless

@@ -68,6 +68,8 @@ The log-in page is made with react and pre-rendered. The login itself is done th
 
 I used `react-forms` to make the form. It uses a hook-based interface which integrates well with the project.
 
+All pages on the admin website are made with React, fetching the data on loading. This makes the pages completely static and separate data from the view, enhancing caching.
+
 On the back-end side, I added the Devise gem to manage all authentication concerns. It is a well supported gems with lots of features and extensions. I only used a subset of the provided features, though, like the login tracking.
 
 ## API
