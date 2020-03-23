@@ -1,0 +1,143 @@
+{
+  "data": {
+    "type": "position-opening",
+    "attributes": {
+      "PositionID": "7029a72f-717c-48bc-b25d-608ce9222312",
+      "PositionTitle": "Teamassistenten (m/w) für Marketing und Vertrieb",
+      "PositionURI": "http://tracking.gohiring.dev/track/redirect?data=eyJldmVudCI6eyJuYW1lIjoiQ2xpY2siLCJwcm9wZXJ0aWVzIjp7ImNsaWNrX3R5cGUiOiJWaWV3IEpvYiBMaW5rIn19LCJldmVudF9ncm91cCI6eyJwcm9wZXJ0aWVzIjp7InBvc3RpbmdfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMiLCJjaGFubmVsX2lkIjoiNjJlM2VmMTktNGRhYS00Yjk1LTg1ZmMtZmM2YjllNWYwN2NkIiwiY2hhbm5lbF9uYW1lIjoiQWJzb2x2ZW50YSIsImpvYl9pZCI6IjcwMjlhNzJmLTcxN2MtNDhiYy1iMjVkLTYwOGNlOTIyMjMxMiIsImpvYl90aXRsZSI6IkpvYiAwMDEiLCJqb2JfbGF0aXR1ZGUiOm51bGwsImpvYl9sb25naXR1ZGUiOm51bGwsImpvYl9jaXR5IjpudWxsLCJqb2JfY291bnRyeSI6ImRlIiwiam9iX3Bvc3RhbF9jb2RlIjoiMTQ3NzAiLCJqb2JfaW5kdXN0cnkiOiJhY2NvdW50aW5nX2FuZF9hdWRpdGluZ19zZXJ2aWNlcyIsImpvYl9zZW5pb3JpdHkiOiJlbnRyeV9sZXZlbCIsImpvYl9zY2hlZHVsZSI6ImZ1bGxfdGltZSIsImpvYl9jbGFzc2lmaWNhdGlvbiI6ImFwcHJlbnRpY2VzaGlwIiwiam9iX3llYXJzX29mX2V4cGVyaWVuY2UiOiJsZXNzX3RoYW5fb25lX3llYXIiLCJqb2JfY2F0ZWdvcnkiOiJhY2NvdW50aW5nX2FuZF9maW5hbmNlIiwiam9iX29jY3VwYXRpb25zIjpbImF1ZGl0Il19LCJ0cmFja2FibGVfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMifSwidXJsIjoiaHR0cDovL3Bvcm5ocS1nbWJoLmNhcmVlci5nb2hpcmluZy5kZXYvZGUvam9icy83MDI5YTcyZi03MTdjLTQ4YmMtYjI1ZC02MDhjZTkyMjIzMTI_cG9zdGluZ19pZD1kMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMifQ%3D%3D&access_token=-sR8GD7DNlSrEFI0te0hwQ",
+      "ApplyURI": [
+        "http://tracking.gohiring.dev/track/redirect?data=eyJldmVudCI6eyJuYW1lIjoiQ2xpY2siLCJwcm9wZXJ0aWVzIjp7ImNsaWNrX3R5cGUiOiJBcHBseSBMaW5rIn19LCJldmVudF9ncm91cCI6eyJwcm9wZXJ0aWVzIjp7InBvc3RpbmdfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMiLCJjaGFubmVsX2lkIjoiNjJlM2VmMTktNGRhYS00Yjk1LTg1ZmMtZmM2YjllNWYwN2NkIiwiY2hhbm5lbF9uYW1lIjoiQWJzb2x2ZW50YSIsImpvYl9pZCI6IjcwMjlhNzJmLTcxN2MtNDhiYy1iMjVkLTYwOGNlOTIyMjMxMiIsImpvYl90aXRsZSI6IkpvYiAwMDEiLCJqb2JfbGF0aXR1ZGUiOm51bGwsImpvYl9sb25naXR1ZGUiOm51bGwsImpvYl9jaXR5IjpudWxsLCJqb2JfY291bnRyeSI6ImRlIiwiam9iX3Bvc3RhbF9jb2RlIjoiMTQ3NzAiLCJqb2JfaW5kdXN0cnkiOiJhY2NvdW50aW5nX2FuZF9hdWRpdGluZ19zZXJ2aWNlcyIsImpvYl9zZW5pb3JpdHkiOiJlbnRyeV9sZXZlbCIsImpvYl9zY2hlZHVsZSI6ImZ1bGxfdGltZSIsImpvYl9jbGFzc2lmaWNhdGlvbiI6ImFwcHJlbnRpY2VzaGlwIiwiam9iX3llYXJzX29mX2V4cGVyaWVuY2UiOiJsZXNzX3RoYW5fb25lX3llYXIiLCJqb2JfY2F0ZWdvcnkiOiJhY2NvdW50aW5nX2FuZF9maW5hbmNlIiwiam9iX29jY3VwYXRpb25zIjpbImF1ZGl0Il19LCJ0cmFja2FibGVfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMifSwidXJsIjoiaHR0cDovL3Bvcm5ocS1nbWJoLmNhcmVlci5nb2hpcmluZy5kZXYvZGUvam9icy83MDI5YTcyZi03MTdjLTQ4YmMtYjI1ZC02MDhjZTkyMjIzMTIvYXBwbGljYXRpb25zL25ldz9wb3N0aW5nX2lkPWQxYmU0M2NmLTE3YzEtNDcyMS05Yzk2LWFlNWMwZmJhMGVmYyJ9&access_token=-sR8GD7DNlSrEFI0te0hwQ"
+      ],
+      "ApplicationMethod": [
+        {
+          "Target": "songstar_apply@gohiring.com",
+          "Label": "email"
+        }
+      ],
+      "PositionOpeningStatusCode": "Active",
+      "PositionSupplier": "Demo job board",
+      "PositionLocation": [
+        {
+          "LocationName": "Standort 1",
+          "CountryCode": "DE",
+          "CountrySubDivisionCode": "Berlin",
+          "CityName": "Berlin",
+          "PostalCode": "12047",
+          "AddressLine": "Friedelstraße 40",
+          "Longitude": null,
+          "Latitude": null
+        }
+      ],
+      "OrganizationName": "Songstar UG",
+      "ParentOrganizationName": "",
+      "DepartmentName": null,
+      "PositionIndustry": [
+        {
+          "Name": "Rundfunk/Musik/Film/TV/Verlag",
+          "Code": "broadcasting"
+        }
+      ],
+      "JobCategory": [
+        {
+          "Name": "Administration/Sachbearbeitung",
+          "Code": "administrative_and_clerical"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Name": "",
+          "Code": ""
+        }
+      ],
+      "CareerLevel": [
+        {
+          "Name": "Berufserfahren",
+          "Code": "experienced"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Vollzeit",
+          "Code": "full_time"
+        }
+      ],
+      "QualificationSummary": "",
+      "PositionFormattedDescription": [
+        {
+          "Content": "Schöne Musik fängt mit Songs an, die auch jemand kennt. Wir von Songstar entwickeln cloudbasierte Musiksoftware, mit denen wir unsere Kunden im produzieren und im Vertrieb ihrer Songs unterstützen.",
+          "Label": "company"
+        },
+        {
+          "Content": "- In Ihrer Position unterstützen Sie die Vertriebs- und Marketingleitung im täglichen Geschäftsablauf und übernehmen anfallende Bürotätigkeiten\n- Sie helfen den Teams aus Marketing und Vertrieb bei der Vorbereitung, Durchführung und Auswertung von Projekten\n- Als erster Ansprechpartner im allgemeinen Schriftverkehr sind Sie verantwortlich für die Koordination der Kommunikation\n- Selbstständige Marktrecherchen sowie die Pflege von Datenbanken\n- Vor allem aber gehen Sie mit Spaß und Leidenschaft Ihre Aufgaben an",
+          "Label": "job"
+        },
+        {
+          "Content": "- Erste Berufserfahrungen in ähnlicher Position sind definitiv von Vorteil\n- Sie wissen wie man auf unterschiedlichen Ebenen kommuniziert und verfügen über ein professionelles Auftreten\n- Routinierter Umgang mit gängigen Office-Anwendungen\n- Sie kennzeichnet ein hohes Maß an Eigeninitiative, Musik-Affinität und ein kreativer Kopf\n- Sehr gute Sprachkenntnisse in deutsch und englisch",
+          "Label": "qualifications"
+        },
+        {
+          "Content": "- Die ideale Kombination aus Musik und Vertrieb\n- Flexible Arbeitszeiten, leistungsgerechte Entlohnung und Berlin als europäische Kreativ- und Technologiemetropole\n- Spielraum sich mit unserem Unternehmen zu entwickeln",
+          "Label": "additional_information"
+        }
+      ],
+      "Attachment": [
+        {
+          "URI": "",
+          "Description": "company_logo"
+        },
+        {
+          "URI": "http://tracking.gohiring.dev/track/pixel?data=eyJldmVudCI6eyJuYW1lIjoiQ2hhbm5lbCBWaWV3Iiwidmlld190eXBlIjoiUGl4ZWwifSwiZXZlbnRfZ3JvdXAiOnsicHJvcGVydGllcyI6eyJwb3N0aW5nX2lkIjoiZDFiZTQzY2YtMTdjMS00NzIxLTljOTYtYWU1YzBmYmEwZWZjIiwiY2hhbm5lbF9pZCI6IjYyZTNlZjE5LTRkYWEtNGI5NS04NWZjLWZjNmI5ZTVmMDdjZCIsImNoYW5uZWxfbmFtZSI6IkFic29sdmVudGEiLCJqb2JfaWQiOiI3MDI5YTcyZi03MTdjLTQ4YmMtYjI1ZC02MDhjZTkyMjIzMTIiLCJqb2JfdGl0bGUiOiJKb2IgMDAxIiwiam9iX2xhdGl0dWRlIjpudWxsLCJqb2JfbG9uZ2l0dWRlIjpudWxsLCJqb2JfY2l0eSI6bnVsbCwiam9iX2NvdW50cnkiOiJkZSIsImpvYl9wb3N0YWxfY29kZSI6IjE0NzcwIiwiam9iX2luZHVzdHJ5IjoiYWNjb3VudGluZ19hbmRfYXVkaXRpbmdfc2VydmljZXMiLCJqb2Jfc2VuaW9yaXR5IjoiZW50cnlfbGV2ZWwiLCJqb2Jfc2NoZWR1bGUiOiJmdWxsX3RpbWUiLCJqb2JfY2xhc3NpZmljYXRpb24iOiJhcHByZW50aWNlc2hpcCIsImpvYl95ZWFyc19vZl9leHBlcmllbmNlIjoibGVzc190aGFuX29uZV95ZWFyIiwiam9iX2NhdGVnb3J5IjoiYWNjb3VudGluZ19hbmRfZmluYW5jZSIsImpvYl9vY2N1cGF0aW9ucyI6WyJhdWRpdCJdfSwidHJhY2thYmxlX2lkIjoiZDFiZTQzY2YtMTdjMS00NzIxLTljOTYtYWU1YzBmYmEwZWZjIn19&access_token=-sR8GD7DNlSrEFI0te0hwQ",
+          "Description": "tracking_pixel"
+        },
+        {
+          "URI": "https://www.company.com/media/header_image.png",
+          "Description": "header_image"
+        },
+        {
+          "URI": "",
+          "EmbeddedData": "",
+          "Description": "designed_ad"
+        }
+      ],
+      "UserArea": {
+        "OrganizationWebsiteURI": "https://songstar.gohiring.com",
+        "OrganizationLocation": [
+          {
+            "LocationName": "HQ",
+            "CountryCode": "DE",
+            "CountrySubDivisionCode": "Sachsen",
+            "CityName": "Leipzig",
+            "PostalCode": "4179",
+            "AddressLine": "Pappelalle 38",
+            "Longitude": null,
+            "Latitude": null
+          }
+        ],
+        "OrganizationCareerSiteURI": "http://tracking.gohiring.dev/track/redirect?data=eyJldmVudCI6eyJuYW1lIjoiQ2xpY2siLCJwcm9wZXJ0aWVzIjp7ImNsaWNrX3R5cGUiOiJDYXJlZXIgU2l0ZSBMaW5rIn19LCJldmVudF9ncm91cCI6eyJwcm9wZXJ0aWVzIjp7InBvc3RpbmdfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMiLCJjaGFubmVsX2lkIjoiNjJlM2VmMTktNGRhYS00Yjk1LTg1ZmMtZmM2YjllNWYwN2NkIiwiY2hhbm5lbF9uYW1lIjoiQWJzb2x2ZW50YSIsImpvYl9pZCI6IjcwMjlhNzJmLTcxN2MtNDhiYy1iMjVkLTYwOGNlOTIyMjMxMiIsImpvYl90aXRsZSI6IkpvYiAwMDEiLCJqb2JfbGF0aXR1ZGUiOm51bGwsImpvYl9sb25naXR1ZGUiOm51bGwsImpvYl9jaXR5IjpudWxsLCJqb2JfY291bnRyeSI6ImRlIiwiam9iX3Bvc3RhbF9jb2RlIjoiMTQ3NzAiLCJqb2JfaW5kdXN0cnkiOiJhY2NvdW50aW5nX2FuZF9hdWRpdGluZ19zZXJ2aWNlcyIsImpvYl9zZW5pb3JpdHkiOiJlbnRyeV9sZXZlbCIsImpvYl9zY2hlZHVsZSI6ImZ1bGxfdGltZSIsImpvYl9jbGFzc2lmaWNhdGlvbiI6ImFwcHJlbnRpY2VzaGlwIiwiam9iX3llYXJzX29mX2V4cGVyaWVuY2UiOiJsZXNzX3RoYW5fb25lX3llYXIiLCJqb2JfY2F0ZWdvcnkiOiJhY2NvdW50aW5nX2FuZF9maW5hbmNlIiwiam9iX29jY3VwYXRpb25zIjpbImF1ZGl0Il19LCJ0cmFja2FibGVfaWQiOiJkMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMifSwidXJsIjoiaHR0cDovL3Bvcm5ocS1nbWJoLmNhcmVlci5nb2hpcmluZy5kZXYvZGU_cG9zdGluZ19pZD1kMWJlNDNjZi0xN2MxLTQ3MjEtOWM5Ni1hZTVjMGZiYTBlZmMifQ%3D%3D&access_token=-sR8GD7DNlSrEFI0te0hwQ",
+        "JobClassification": [
+          {
+            "Name": "Festanstellung",
+            "Code": "permanent"
+          }
+        ],
+        "JobYearsOfExperience": [
+          {
+            "Name": "1 bis 2 Jahre",
+            "Code": "one_to_two_years"
+          }
+        ],
+        "JobSkills": [
+          "Musik"
+        ],
+        "JobOccupations": [
+          {
+            "Name": "Assistenz",
+            "Code": "executive_support"
+          }
+        ],
+        "PostingID": "3b571b59-93c4-4112-a5df-6c29f93fbfa2",
+        "PostingURI": "http://posting.gohiring.com/postings/3b571b59-93c4-4112-a5df-6c29f93fbfa2"
+      }
+    }
+  }
+}

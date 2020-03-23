@@ -43,8 +43,19 @@ RSpec.describe 'Api::Openings', type: :request do
     context 'when using the GoHiring module' do
       let(:upstream) { Fabricate(:upstream, upstream_module: 'go_hiring') }
 
-      xit 'parses the request correctly' do
-        post api_openings_path, params: {}, headers: headers
+      it 'parses the request correctly' do
+        expect do
+          data = file_fixture('go_hiring/publication.json')
+          post api_openings_path, params: data.read, headers: headers
+        end
+          .to change(Opening, :count).by(1)
+
+        expect(response).to have_http_status(:success)
+
+        opening = Opening.last
+        expect(opening.title).to eq('Teamassistenten (m/w) für Marketing und Vertrieb')
+        expect(opening.company).to eq('Songstar UG')
+        expect(opening.upstream_url).to eq('https://example.org/gh/7029a72f-717c-48bc-b25d-608ce9222312')
       end
     end
 
