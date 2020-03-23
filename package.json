@@ -9,10 +9,12 @@
     "@rails/webpacker": "4.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "^4.4.1",
+    "intl": "^1.2.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-form": "^4.0.1",
+    "react-intl": "^2.1.5",
     "react-on-rails": "11.3.0",
     "react-router-dom": "^5.1.2"
   },

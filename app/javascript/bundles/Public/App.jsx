@@ -4,6 +4,7 @@ import DataLoader from 'bundles/Public/components/DataLoader'
 import OpeningList from 'bundles/Public/components/OpeningList'
 import Opening from 'bundles/Public/components/Opening'
 import { isPrerender } from 'bundles/Public/prerender'
+import { withLocale } from 'bundles/Shared/locale.jsx'
 
 const fetchOpenings = (_, openings) => {
   if (openings) { return false }
@@ -44,4 +45,4 @@ const App = ({ context, railsContext: { location } }) => {
   )
 }
 
-export default (props, railsContext) => <App {...props} railsContext={railsContext} />
+export default (props, railsContext) => withLocale(railsContext.i18nLocale, () => <App {...props} railsContext={railsContext} />)

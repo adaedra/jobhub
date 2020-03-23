@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FormattedMessage } from 'react-intl'
 
 const OpeningCard = ({ id, title, company }) => {
   return (
@@ -10,7 +11,9 @@ const OpeningCard = ({ id, title, company }) => {
           <div className='text-muted'>{company}</div>
         </div>
         <div className='card-footer'>
-          <Link to={`/openings/${id}`}>View offer</Link>
+          <Link to={`/openings/${id}`}>
+            <FormattedMessage id='views.public.index.open' />
+          </Link>
         </div>
       </div>
     </div>
@@ -20,7 +23,9 @@ const OpeningCard = ({ id, title, company }) => {
 const OpeningList = ({ openings }) => {
   return (
     <div className='p-4 container-md'>
-      <h1>Active openings</h1>
+      <h1>
+        <FormattedMessage id='views.public.index.title' />
+      </h1>
       <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3'>
         {openings.map(opening => <OpeningCard key={opening.id} {...opening} />)}
       </div>

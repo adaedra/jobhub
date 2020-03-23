@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FormattedMessage } from 'react-intl'
 
 const Opening = props => {
   const { title, company, description } = props
 
   return (
     <div className='p-4 container-md'>
-      <Link to='/openings'>Back to openings view</Link>
+      <Link to='/openings'>
+        <FormattedMessage id='views.public.show.back' />
+      </Link>
 
       <div className='jumbotron'>
         <h1>{title}</h1>
@@ -17,7 +20,7 @@ const Opening = props => {
       </div>
       <hr />
       <div className='text-muted text-center'>
-        This offer is hosted on JobHub
+        <FormattedMessage id='views.public.show.footer' />
       </div>
     </div>
   )

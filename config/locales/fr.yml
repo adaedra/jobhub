@@ -8,3 +8,11 @@ fr:
               archived_before_publication: ne peut être vide si la date d'archivage est définie
             archived_at:
               before_publication: doit être postérieure à la date de publication
+  views:
+    public:
+      index:
+        title: Offres actives
+        open: Voir l'offre
+      show:
+        back: Retour sur la liste des offres
+        footer: Cette offre est hébergée sur JobHub

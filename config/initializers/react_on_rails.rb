@@ -41,4 +41,6 @@ ReactOnRails.configure do |config|
   # React components.
   #
   config.server_bundle_js_file = 'server-bundle.js'
+
+  config.i18n_dir = Rails.root.join('app/javascript/locales')
 end

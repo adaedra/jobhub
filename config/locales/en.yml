@@ -8,3 +8,11 @@ en:
               archived_before_publication: "can't be unset if the archival date is set"
             archived_at:
               before_publication: must be set after publication date
+  views:
+    public:
+      index:
+        title: Active openings
+        open: View offer
+      show:
+        back: Back to openings view
+        footer: This offer is hosted on JobHub

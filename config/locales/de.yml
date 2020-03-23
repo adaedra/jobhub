@@ -1,0 +1,18 @@
+de:
+  activerecord:
+    errors:
+      models:
+        opening:
+          attributes:
+            published_at:
+              archived_before_publication: kann nicht leer sein, ob Archivdatum eingesestellen ist
+            archived_at:
+              before_publication: muss nach das Veröffentlichungsdatum eingestellen sein
+  views:
+    public:
+      index:
+        title: Aktuelle Angebote
+        open: Angebot öffnen
+      show:
+        back: Zurück nach Angebotliste
+        footer: Diese Angebot is auf JobHub bereitgestellt
