@@ -4,4 +4,8 @@
 # authentification purposes. The id (uuid) serves as the client key.
 class Upstream < ApplicationRecord
   devise :trackable
+
+  def upstream_module
+    self.class.const_get(:default.to_s.camelize)
+  end
 end

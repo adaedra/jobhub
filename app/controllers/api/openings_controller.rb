@@ -14,8 +14,6 @@ class Api::OpeningsController < Api::ApplicationController
   private
 
   def opening_params
-    params
-      .require(:opening)
-      .permit(:title, :description, :company, :upstream_url, :published_at, :archived_at)
+    current_upstream.upstream_module.new.parse(params)
   end
 end

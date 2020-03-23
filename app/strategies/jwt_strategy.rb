@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class JwtStrategy < Warden::Strategies::Base
+class JwtStrategy < Devise::Strategies::Base
   def valid?
     api_token.present?
   end
