@@ -11,7 +11,7 @@ jobs:
     steps:
     - script: |
         sudo apt-get update -qq
-        sudo apt-get install firefox geckodriver
+        sudo apt-get install firefox firefox-geckodriver
       env:
         DEBIAN_FRONTEND: noninteractive
     - task: UseRubyVersion@0
