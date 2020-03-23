@@ -9,6 +9,11 @@ jobs:
       BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
       YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
     steps:
+    - script: |
+        apt-get update -qq
+        apt-get install firefox geckodriver
+      env:
+        DEBIAN_FRONTEND: noninteractive
     - task: UseRubyVersion@0
       inputs:
         versionSpec: '2.6.5'
