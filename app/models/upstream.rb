@@ -5,7 +5,7 @@
 class Upstream < ApplicationRecord
   devise :trackable
 
-  def upstream_module
-    self.class.const_get(:default.to_s.camelize)
+  def make_module
+    self.class.const_get((upstream_module || 'default').camelize)
   end
 end

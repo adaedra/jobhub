@@ -40,6 +40,14 @@ RSpec.describe 'Api::Openings', type: :request do
       expect(response).to have_http_status(:unprocessable_entity)
     end
 
+    context 'when using the GoHiring module' do
+      let(:upstream) { Fabricate(:upstream, upstream_module: 'go_hiring') }
+
+      xit 'parses the request correctly' do
+        post api_openings_path, params: {}, headers: headers
+      end
+    end
+
     private
 
     def headers

@@ -14,6 +14,6 @@ class Api::OpeningsController < Api::ApplicationController
   private
 
   def opening_params
-    current_upstream.upstream_module.new.parse(params)
+    current_upstream.make_module.new.parse(params)
   end
 end

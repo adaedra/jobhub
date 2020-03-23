@@ -13,3 +13,6 @@ User.find_or_create_by!(email: 'admin@jobhub.app') do |user|
 end
 
 Upstream.find_or_create_by!(name: 'Unemployment Agency')
+Upstream.find_or_create_by!(name: 'GoHiring') do |upstream|
+  upstream.upstream_module = 'go_hiring'
+end
