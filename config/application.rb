@@ -36,8 +36,6 @@ module Jobhub
 
     # If credentials are missing when doing `rails credentials:edit`, Rails will generate default ones. We want to add
     # some more defaults for our own values. To do so, we have to hijack Rails' standard generation and push our own.
-    if defined? Rails::Command::CredentialsCommand
-      require 'default_credentials_patch'
-    end
+    require 'default_credentials_patch' if defined? Rails::Command::CredentialsCommand
   end
 end
