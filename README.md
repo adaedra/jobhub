@@ -13,11 +13,12 @@ GoHiring Challenge
 ## Installation
 
 ```sh
-bundle install                             # Install gem dependencies
-docker-compose up -d                       # Start Postgres
-bin/rails db:create db:schema:load db:seed # Initialize database
-bin/rails yarn:install                     # Install NodeJS dependencies
-bin/rails react_on_rails:locale            # Generate translations
+bundle install                                       # Install gem dependencies
+docker-compose up -d                                 # Start Postgres
+head -c 24 /dev/urandom | base64 > config/master.key # Generate an encryption key
+bin/rails yarn:install                               # Install NodeJS dependencies
+bin/rails db:create db:schema:load db:seed           # Initialize database
+bin/rails react_on_rails:locale                      # Generate translations
 ```
 
 ## Run it

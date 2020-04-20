@@ -33,5 +33,11 @@ module Jobhub
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # If credentials are missing when doing `rails credentials:edit`, Rails will generate default ones. We want to add
+    # some more defaults for our own values. To do so, we have to hijack Rails' standard generation and push our own.
+    if defined? Rails::Command::CredentialsCommand
+      require 'default_credentials_patch'
+    end
   end
 end
